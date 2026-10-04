@@ -1,0 +1,15 @@
+{
+  "name": "codebase-knowledge-graph",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Explore any codebase as a knowledge graph. Graphify extracts it, Node.js serves it, React visualizes it.",
+  "workspaces": ["server", "web"],
+  "scripts": {
+    "dev": "concurrently -n api,web -c blue,green \"npm run dev -w server\" \"npm run dev -w web\"",
+    "build": "npm run build -w web",
+    "start": "npm run start -w server",
+    "test": "npm run test -w server && npm run test -w web"
+  },
+  "devDependencies": { "concurrently": "^9.0.0" },
+  "license": "MIT"
+}

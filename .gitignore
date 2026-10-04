@@ -1,0 +1,15 @@
+node_modules/
+.venv/
+web/dist/
+*.log
+.env
+.DS_Store
+# graphify caches (graph.json / report / html are tracked)
+graphify-out/cache/
+graphify-out/manifest.json
+fixtures/**/graphify-out/cache/
+fixtures/**/graphify-out/manifest.json
+.claude/
+graphify-out/*/
+.graphify_root
+.graphify_labels.json*

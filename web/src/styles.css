@@ -1,0 +1,26 @@
+:root { color-scheme: dark; font-family: system-ui, sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #0f1117; color: #e6e8ee; }
+.app { display: flex; flex-direction: column; height: 100vh; }
+header { display: flex; align-items: center; gap: 16px; padding: 10px 16px; border-bottom: 1px solid #252a36; }
+header h1 { font-size: 16px; margin: 0; }
+.stats { color: #8b93a7; font-size: 13px; flex: 1; }
+main { flex: 1; display: flex; min-height: 0; }
+.canvas { flex: 1; position: relative; overflow: hidden; }
+aside { width: 340px; padding: 12px; overflow-y: auto; border-left: 1px solid #252a36; }
+aside h2 { font-size: 14px; margin: 16px 0 6px; }
+nav { display: flex; gap: 6px; margin-bottom: 10px; }
+button { background: #1b2030; color: inherit; border: 1px solid #2c3347; border-radius: 6px; padding: 4px 10px; cursor: pointer; }
+button:hover:not(:disabled) { border-color: #4f8cff; }
+button.on { background: #4f8cff; border-color: #4f8cff; }
+input { width: 100%; padding: 8px; background: #1b2030; color: inherit; border: 1px solid #2c3347; border-radius: 6px; }
+.list { list-style: none; padding: 0; margin: 8px 0; }
+.list li { margin: 4px 0; }
+ol.list { list-style: decimal inside; }
+.list button { background: none; border: none; padding: 0; color: #7fb0ff; text-align: left; }
+.muted { color: #8b93a7; font-size: 12px; }
+.legend { list-style: none; padding: 0; font-size: 13px; }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; }
+.notice { position: absolute; z-index: 2; top: 12px; left: 12px; background: #3a1d22; padding: 10px 14px; border-radius: 6px; }
+.report { white-space: pre-wrap; font-size: 12px; }
+@media (max-width: 800px) { main { flex-direction: column; } aside { width: 100%; max-height: 45vh; border-left: 0; } }
